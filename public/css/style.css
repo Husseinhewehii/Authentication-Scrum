@@ -114,7 +114,6 @@ body {
 	padding: 0 8px;
 }
 .form-v4-content .form-detail label {
-	font-weight: 600;
 	font-size: 15px;
 	color: #666;
 	display: block;
@@ -449,4 +448,26 @@ body {
 .radio-button{
 	width: 50% !important;
 	border-radius: 50% !important;
+}
+
+
+.input-class{
+	width: 330px !important;
+    height: 40px;
+}
+
+.signup-btn{
+	width: 330px !important;
+    background-color: #1b5263;
+}
+
+.signup-btn:hover{
+    background-color: #4690a7;
+}
+
+.signup-msg{
+	color:#3487a0 !important;
+	font-size: 11px !important;
+	text-align: center;
+	margin-top: 10px;
 }

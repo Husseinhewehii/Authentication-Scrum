@@ -27,43 +27,54 @@
                     </div>
 				</div>
                 <hr>
-                <div>
-                    
+                <div class="col-md-8 offset-md-2">
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Saluation</label>
-                        <div class="col-sm-2">
+                        <div class="col-sm-3 ">
+
                             <div class="form-radio">
                                 <label class="form-check-label">
                                 <input type="radio" class="form-check-input radio-button" name="saluations" id="mr" value="" checked> Mr. </label>
                             </div>
                         </div>
                         
-                        <div class="col-sm-2">
+                        <div class="col-sm-3 ">
+
                             <div class="form-radio">
                                 <label class="form-check-label">
                                 <input type="radio" class="form-check-input radio-button" name="saluations" id="Mrs/Ms" value="option2"> Mrs/Ms </label>
                             </div>
                         </div>
 
-                        <div class="col-sm-2">
+                        <div class="col-sm-3 ">
+
                             <div class="form-radio">
                                 <label class="form-check-label">
                                 <input type="radio" class="form-check-input radio-button" name="saluations" id="mx" value="option2"> Mx </label>
                             </div>
                         </div>
                     </div>
-                      
+                    <div class="register-form">
+                        <div class="form-row ">
+                            <input type="text" name="first_name" class="input-class input-text" placeholder="First Name"required>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="last_name" class="input-class input-text" placeholder="Last Name"required>
+                        </div>
+                        <div class="form-row">
+                            <input type="password" name="password" class="input-class input-text" placeholder="Password (min 8 characters)" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="password" name="password_cofirmation" class="input-class input-text" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                    <div class="signup-div">
+                        <button type="button" class="btn btn-primary btn-rounded signup-btn">
+                            Sign Up
+                        </button>
+                        <p class="signup-msg">By signing up I agree to Terms of Service and Privacy Policy</p>
+                    </div>
                 </div> 
-				<div class="form-group">
-					<div class="form-row form-row-1 ">
-						<label for="password">Password</label>
-						<input type="password" name="password" id="password" class="input-text" required>
-					</div>
-					<div class="form-row form-row-1">
-						<label for="comfirm-password">Comfirm Password</label>
-						<input type="password" name="comfirm_password" id="comfirm_password" class="input-text" required>
-					</div>
-				</div>
 				<div class="form-checkbox">
 					<label class="container"><p>I agree to the <a href="#" class="text">Terms and Conditions</a></p>
 					  	<input type="checkbox" name="checkbox">
