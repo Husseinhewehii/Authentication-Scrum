@@ -2,16 +2,19 @@
 ## The Application
 
 A Web Appication that allows User to Register or Login through:
- - Linkedin, gmail or Manually
+ - Linkedin, Gmail or Manually
 *   If you register through a social platform and default password with value "secret" is created .
 
 ## The Installation
 - Clone : 
-    *  SSH: [git clone git@github.com:Husseinhewehii/Authentication-Scrum.git]
+    *  SSH: git clone git@github.com:Husseinhewehii/Authentication-Scrum.git
     * HTTPS: git clone https://github.com/Husseinhewehii/Authentication-Scrum.git
 - composer install
-- setup your database
 - cp .env.example .env
+- setup your database as following :
+ * DB_DATABASE=database-name
+ * DB_USERNAME=database-username
+ * DB_PASSWORD=database-password
 - php artisan migrate
 - php artisan generate:key
 - add your client ID and secret key in .env file as following:  
