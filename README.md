@@ -7,8 +7,8 @@ A Web Appication that allows User to Register or Login through:
 
 ## The Installation
 - Clone : 
-    *  <h1>SSH: git clone git@github.com:Husseinhewehii/Authentication-Scrum.git</h1>
-    * - **[Vehikl](https://vehikl.com/)**
+    *  SSH: [git clone git@github.com:Husseinhewehii/Authentication-Scrum.git]
+    * - *[Vehikl](https://vehikl.com/)*
     * HTTPS: git clone https://github.com/Husseinhewehii/Authentication-Scrum.git
 - composer install
 - setup your database
