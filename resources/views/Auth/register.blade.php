@@ -6,14 +6,14 @@
 		<div class="form-v4-content">
 			<form class="form-detail" action="#" method="post" id="myform">
 				<h2 class="form-title">Start investing on primeCROWD</h2>
-				<div class="social-login">
+				<div class="social-register">
                     <div class="btn-group offset-md-2 social-login-item">
                         <button type="button" 
                         class="btn btn-primary dropdown-toggle-split linkedin-icon-button">
                             <i class="fab fa-linkedin-in linkedin-icon"></i>
                           </button>
                         <button type="button" class="btn btn-primary btn-rounded linkedin">
-                            Sign in with linkedin
+                            Sign-Up with linkedin
                         </button>
                     </div>
                     <div class="btn-group offset-md-2 social-login-item">
@@ -22,7 +22,7 @@
                             <i class="fab fa-google"></i>
                           </button>
                         <button type="button" class="btn btn-primary btn-rounded google">
-                            Sign in with Google
+                            Sign-Up with Google
                         </button>
                     </div>
 				</div>
