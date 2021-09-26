@@ -6,9 +6,10 @@ A Web Appication that allows User to Register or Login through:
 *   If you register through a social platform and default password with value "secret" is created .
 
 ## The Installation
-- Clone : 
-    *  SSH: git clone git@github.com:Husseinhewehii/Authentication-Scrum.git
-    * HTTPS: git clone https://github.com/Husseinhewehii/Authentication-Scrum.git
+- Clone(SSH or HTTPS) : 
+    * git clone git@github.com:Husseinhewehii/Authentication-Scrum.git
+    * git clone https://github.com/Husseinhewehii/Authentication-Scrum.git
+- cd Authentication-Scrum
 - composer install
 - cp .env.example .env
 - setup your database as following :
