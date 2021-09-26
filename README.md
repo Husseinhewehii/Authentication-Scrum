@@ -12,7 +12,7 @@ A Web Appication that allows User to Register or Login through:
 - cd Authentication-Scrum
 - composer install
 - cp .env.example .env
-- setup your database as following :
+- setup your database in .env file as following:
     * DB_DATABASE=database-name
     * DB_USERNAME=database-username
     * DB_PASSWORD=database-password
