@@ -30,43 +30,29 @@
                 <hr>
                 <div class="col-md-8 offset-md-2">
                     <div class="form-group row">
+                        <div class="errorsClass">{{$errors->first('saluation')}}</div>
                         <label class="col-sm-3 col-form-label">Saluation</label>
-                        <div class="col-sm-3 ">
-
-                            <div class="form-radio">
-                                <label class="form-check-label">
-                                <input type="radio" class="form-check-input radio-button" name="saluations" id="mr" value="" checked> Mr. </label>
+                        @foreach (constant('saluations')::getSaluations() as $number => $saluation)
+                            <div class="col-sm-3 ">
+                                <div class="form-radio">
+                                    <label class="form-check-label">
+                                    <input type="radio" class="form-check-input radio-button" name="saluation" value="{{$number}}" {{old('saluation') == $number ? "checked" : ""}}> {{$saluation}} </label>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="col-sm-3 ">
-
-                            <div class="form-radio">
-                                <label class="form-check-label">
-                                <input type="radio" class="form-check-input radio-button" name="saluations" id="Mrs/Ms" value="option2"> Mrs/Ms </label>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-3 ">
-
-                            <div class="form-radio">
-                                <label class="form-check-label">
-                                <input type="radio" class="form-check-input radio-button" name="saluations" id="mx" value="option2"> Mx </label>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                     <div class="register-form">
                         <div class="form-row ">
                             <div class="errorsClass">{{$errors->first('first_name')}}</div>
-                            <input type="text" name="first_name" class="input-class input-text" placeholder="First Name"required>
+                            <input type="text" value="{{old('first_name')}}" name="first_name" class="input-class input-text" placeholder="First Name"required>
                         </div>
                         <div class="form-row">
                             <div class="errorsClass">{{$errors->first('last_name')}}</div>
-                            <input type="text" name="last_name" class="input-class input-text" placeholder="Last Name"required>
+                            <input type="text" value="{{old('last_name')}}" name="last_name" class="input-class input-text" placeholder="Last Name"required>
                         </div>
                         <div class="form-row">
                             <div class="errorsClass">{{$errors->first('email')}}</div>
-                            <input type="text" name="email" class="input-class input-text" placeholder="Email"required>
+                            <input type="text" value="{{old('email')}}" name="email" class="input-class input-text" placeholder="Email"required>
                         </div>
                         <div class="form-row">
                             <div class="errorsClass">{{$errors->first('password')}}</div>
@@ -74,11 +60,11 @@
                         </div>
                         <div class="form-row">
                             <div class="errorsClass">{{$errors->first('password_confirmation')}}</div>
-                            <input type="password" name="password_cofirmation" class="input-class input-text" placeholder="Confirm Password" required>
+                            <input type="password" name="password_confirmation" class="input-class input-text" placeholder="Confirm Password" required>
                         </div>
                     </div>
                     <div class="signup-div">
-                        <button type="button" class="btn btn-primary btn-rounded signup-btn">
+                        <button type="submit" class="btn btn-primary btn-rounded signup-btn">
                             Sign Up
                         </button>
                         <p class="signup-msg">By signing up I agree to Terms of Service and Privacy Policy</p>

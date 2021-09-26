@@ -27,5 +27,5 @@ Route::group(['middleware' => "unAuth:web"], function (){
 
 Route::group(['middleware' => "auth:web"], function (){
     Route::get('/', [HomeController::class, 'index'])->name('home');
-    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 });
