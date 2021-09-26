@@ -462,7 +462,8 @@ body {
 }
 
 .signup-btn:hover{
-    background-color: #4690a7;
+    background-color: #ffd000;
+	color:black;
 }
 
 .signup-msg{
@@ -477,4 +478,19 @@ body {
 	color: #1b5263 !important;
 	margin-bottom: 5px;
 	font-family: Impact;
+}
+
+.errorsClass{
+    color:red;
+    font-family: auto;
+}
+
+.register-btn{
+	width: 330px !important;
+	margin-top: 10px !important;
+	color:white;
+}
+
+.register-btn:hover{
+    background-color: #ffd000;
 }

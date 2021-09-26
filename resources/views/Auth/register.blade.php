@@ -4,7 +4,8 @@
 <body class="form-v4">
 	<div class="page-content">
 		<div class="form-v4-content">
-			<form class="form-detail" action="#" method="post" id="myform">
+			<form class="form-detail" action="{{route('registerAttempt')}}" method="post">
+                @csrf
 				<h2 class="form-title">Start investing on primeCROWD</h2>
 				<div class="social-register">
                     <div class="btn-group offset-md-2 social-login-item">
@@ -56,15 +57,23 @@
                     </div>
                     <div class="register-form">
                         <div class="form-row ">
+                            <div class="errorsClass">{{$errors->first('first_name')}}</div>
                             <input type="text" name="first_name" class="input-class input-text" placeholder="First Name"required>
                         </div>
                         <div class="form-row">
+                            <div class="errorsClass">{{$errors->first('last_name')}}</div>
                             <input type="text" name="last_name" class="input-class input-text" placeholder="Last Name"required>
                         </div>
                         <div class="form-row">
+                            <div class="errorsClass">{{$errors->first('email')}}</div>
+                            <input type="text" name="email" class="input-class input-text" placeholder="Email"required>
+                        </div>
+                        <div class="form-row">
+                            <div class="errorsClass">{{$errors->first('password')}}</div>
                             <input type="password" name="password" class="input-class input-text" placeholder="Password (min 8 characters)" required>
                         </div>
                         <div class="form-row">
+                            <div class="errorsClass">{{$errors->first('password_confirmation')}}</div>
                             <input type="password" name="password_cofirmation" class="input-class input-text" placeholder="Confirm Password" required>
                         </div>
                     </div>

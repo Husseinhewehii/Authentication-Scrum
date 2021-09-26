@@ -8,9 +8,9 @@
 				<div class="social-login">
                     <h2 class="offset-md-2">Welcome</h2>
                     <div class="btn-group offset-md-2 social-login-item">
-                        <button type="button" class="btn btn-primary btn-rounded signup-btn">
+                        <a href="{{route('logout')}}" class="btn btn-primary btn-rounded signup-btn">
                             logout
-                        </button>
+						</a>
                     </div>
 				</div>
 			</div>
