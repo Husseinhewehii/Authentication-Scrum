@@ -3,7 +3,7 @@
 
 A Web Appication that allows User to Register or Login through:
  - Linkedin, gmail or Manually
-If you register through a social platform and default password with value "secret" is created .
+*   If you register through a social platform and default password with value "secret" is created .
 
 ## The Installation
 - Clone : 
