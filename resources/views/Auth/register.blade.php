@@ -74,7 +74,7 @@
 				<div class="col-md-8 offset-md-3">
 					<span class="already_registered">
                         Already have an account? 
-                        <a href="">Sign in</a>
+                        <a href="{{route('login')}}">Sign in</a>
                     </span>
 				</div>
 			</form>
