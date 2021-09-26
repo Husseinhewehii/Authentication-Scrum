@@ -12,9 +12,9 @@ A Web Appication that allows User to Register or Login through:
 - composer install
 - cp .env.example .env
 - setup your database as following :
- * DB_DATABASE=database-name
- * DB_USERNAME=database-username
- * DB_PASSWORD=database-password
+    * DB_DATABASE=database-name
+    * DB_USERNAME=database-username
+    * DB_PASSWORD=database-password
 - php artisan migrate
 - php artisan generate:key
 - add your client ID and secret key in .env file as following:  
