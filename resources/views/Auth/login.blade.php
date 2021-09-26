@@ -75,14 +75,12 @@
                         <p class="signup-msg">By signing up I agree to Terms of Service and Privacy Policy</p>
                     </div>
                 </div> 
-				<div class="form-checkbox">
-					<label class="container"><p>I agree to the <a href="#" class="text">Terms and Conditions</a></p>
-					  	<input type="checkbox" name="checkbox">
-					  	<span class="checkmark"></span>
-					</label>
-				</div>
-				<div class="form-row-last">
-					<input type="submit" name="register" class="register" value="Register">
+                <hr>
+				<div class="col-md-8 offset-md-3">
+					<span class="already_registered">
+                        Already have an account? 
+                        <a href="">Sign in</a>
+                    </span>
 				</div>
 			</form>
             <div class="form-left">
