@@ -18,14 +18,14 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
-            $table->integer('saluation');
+            $table->integer('saluation')->default(1);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->default(Hash::make('secret'));
             $table->string('avatar')->nullable();
             $table->string('provider', 20)->nullable();
             $table->string('provider_id')->nullable();
-            $table->string('access_token')->nullable();
+            $table->text('access_token')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

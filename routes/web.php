@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SocialController;
 use Illuminate\Support\Facades\Route;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +24,9 @@ Route::group(['middleware' => "unAuth:web"], function (){
     Route::get('/register', [AuthController::class, 'register'])->name('register'); 
     Route::post('/loginAttempt', [AuthController::class, 'loginAttempt'])->name('loginAttempt');
     Route::post('/registerAttempt', [AuthController::class, 'registerAttempt'])->name('registerAttempt'); 
+
+    Route::get('oauth/{driver}', [SocialController::class, 'redirectToProvider'])->name('social.oauth');
+    Route::get('oauth/{driver}/callback', [SocialController::class, 'handleProviderCallback'])->name('social.callback');
 });
 
 

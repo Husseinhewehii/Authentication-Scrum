@@ -30,4 +30,16 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google' => [
+        'client_id'     => env('GL_ID'),
+        'client_secret' => env('GL_SECRET'),
+        'redirect'      => env('APP_URL') . '/oauth/google/callback',
+    ],
+
+    'linkedin' => [
+        'client_id'     => env('LK_ID'),
+        'client_secret' => env('LK_SECRET'),
+        'redirect'      => env('APP_URL') . '/oauth/linkedin/callback',
+    ],
+
 ];

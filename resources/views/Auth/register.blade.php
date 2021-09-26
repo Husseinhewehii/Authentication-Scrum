@@ -9,22 +9,22 @@
 				<h2 class="form-title">Start investing on primeCROWD</h2>
 				<div class="social-register">
                     <div class="btn-group offset-md-2 social-login-item">
-                        <button type="button" 
+                        <a href="{{ route('social.oauth', 'linkedin') }}" type="button" 
                         class="btn btn-primary dropdown-toggle-split linkedin-icon-button">
                             <i class="fab fa-linkedin-in linkedin-icon"></i>
-                          </button>
-                        <button type="button" class="btn btn-primary btn-rounded linkedin">
-                            Sign-Up with linkedin
-                        </button>
+                        </a>
+                        <a href="{{ route('social.oauth', 'linkedin') }}" type="button" class="btn btn-primary btn-rounded linkedin">
+                            Sign in with linkedin
+                        </a>
                     </div>
                     <div class="btn-group offset-md-2 social-login-item">
-                        <button type="button" 
+                        <a href="{{ route('social.oauth', 'google') }}" 
                         class="btn btn-primary dropdown-toggle-split google-icon-button">
                             <i class="fab fa-google"></i>
-                          </button>
-                        <button type="button" class="btn btn-primary btn-rounded google">
-                            Sign-Up with Google
-                        </button>
+                        </a>
+                        <a href="{{ route('social.oauth', 'google') }}" class="btn btn-primary btn-rounded google">
+                            Sign in with Google
+                        </a>
                     </div>
 				</div>
                 <hr>
