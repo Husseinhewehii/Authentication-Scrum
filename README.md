@@ -3,7 +3,7 @@
 
 A Web Appication that allows User to Register or Login through:
  - Linkedin, Gmail or Manually
-*   If you register through a social platform and default password with value "secret" is created .
+*   If you register through a social platform a default password with value "secret" is created .
 *   A Middleware is configured that filters routes' access for user based on their status (logged in or logged out) 
 
 ## The Installation
